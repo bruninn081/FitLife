@@ -1,0 +1,370 @@
+body { /* PAGINA PRINCIPAL 01*/
+    background-color: #FCFCFC;
+    margin: 0;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: #10151A;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 15px 20px #10151a9c;
+}
+
+header > h1 {
+    color: #59E38C;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: #FCFCFC;
+    padding-left: 30px;
+}
+
+header > nav > a:hover {
+    color: #59E38C;
+    background-color: #59e38c4f;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#textoimagem {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-image: url(imagens/paginaPrincipal/fundo.jpg); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    box-shadow: 0px 15px 20px #10151a9c;
+}
+
+.verde {
+    color: #59E38C;
+    font-weight: bold;
+}
+
+#textoimagem > h2 {
+    font-size: 60px;
+    margin: 20px 0 20px 0;
+}
+
+.branco {
+    color: #FCFCFC;
+}
+
+.botao {
+    background-color: #59E38C;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.botao:hover {
+    background-color: #FCFCFC;
+    color: #10151A;
+    font-weight: bolder;
+}
+
+#icones {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    display: flex;
+    text-align: center;
+}
+
+.imagens {
+    background-color: #59E38C;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #10151a6b;
+}
+
+#icones > div{
+    margin: auto;
+}
+
+#navegacao {
+    padding: 60px 100px 0px 100px;
+    text-align: center;
+}
+
+#navegacao > div {
+    margin: auto;
+    display: inline-block;
+    padding-left: 70px;
+}
+
+#navegacao > div > p > a {
+    text-decoration: none;
+    color: #10151A; 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#navegacao > div > p > a:hover {
+    color: #FCFCFC;
+    background-color: #10151A;
+    padding: 10px;
+    border-radius: 30px;   
+}
+
+#forms {
+    background-image: url(imagens/paginaPrincipal/fundo.jpg);
+    color: #FCFCFC;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 15px;
+    background-size: 100%;
+    background-position: center;
+    padding-top: 15px;
+    box-shadow: 0px -15px 20px #10151a9c;
+}
+
+#forms > h3 {
+    padding-top: 15px;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.forms {
+    background-color: #10151A;
+    width: 400px;
+    height: 377px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+}
+
+.input {
+    width: 300px;
+    height: 35px;
+    font-size: 16px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.creditos {
+    text-align: center;
+    background-color: #10151A;
+    padding: 15px;
+    color: #FCFCFC;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 0px -15px 20px #10151a9c;
+}
+
+.creditos > p {
+    margin: 0px;
+}
+
+.creditos > p > a {
+    color: #0A66C2;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.creditos > p > a:hover {
+    color: #10151A;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+body.pagina01 { /*PAGINA 01 - TREINOS*/
+    background-color: #FCFCFC;
+    margin: 0;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; 
+}
+
+.tabelas {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tabelas > thead > tr > th {
+    color: #FCFCFC;
+    background-color: #10151A;
+}
+
+.iniciante > div {
+    padding-bottom: 15px;
+}
+
+.iniciante > div > h1 {
+    margin-top: 0px;
+    padding-top: 15px;
+}
+
+.intermediario > div {
+    padding-bottom: 15px;
+}
+
+.intermediario > div > h1 {
+    margin-top: 0px; 
+    padding-top: 15px;   
+}
+
+.avancado > div {
+    padding-bottom: 15px;
+}
+
+.avancado > div > div > h1 {
+    margin-top: 0px; 
+    padding-top: 15px;   
+}
+
+.linha {
+    height: 10px;
+    border: none;
+    background-color: #10151A;
+    box-shadow: 5px 5px 15px #10151a6b;
+}
+
+.aprenda > div {
+    text-align: center;
+}
+
+.aprenda > div > h2 {
+    margin-top: 0px;
+    padding-top: 15px;
+}
+
+.aprenda > div > a > img {
+    margin: auto;
+    display: flex;
+}
+
+body.pagina02 { /*PAGINA 02 - PORQUE TREINAR?*/
+    background-color: #FCFCFC;
+    margin: 0;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+
+body.pagina03 { /*PAGINA 03 - DÉFICIT CALÓRICO*/
+    background-color: #FCFCFC;
+    margin: 0;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; 
+}
+
+.listas > li {
+    padding: 5px;
+}
+
+.imagensPag03 {
+    width: 100%;
+    display: block;
+    box-shadow: 0px -15px 20px #10151a9c;
+}
+
+.sessaoEscura {
+    background-color: #10151A;
+    color: #FCFCFC;
+}
+
+.sessaoEscura > div > h3 {
+    padding-top: 20px;
+    margin-top: 0px;
+}
+
+.referencias02 {
+    text-decoration: none;
+    color: #59E38C; 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.referencias02:hover {
+    color: #10151A;
+    background-color: #59E38C;
+    padding: 5px;
+    border-radius: 30px; 
+}
+
+.grandesMarcas > a > img {
+    width: 300px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding: 30px 30px 30px 0px;
+}
+
+body.pagina04 { /*PAGINA 04 - MUSCULAÇÃO*/
+    background-color: #FCFCFC;
+    margin: 0;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.divMain {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.referencias{
+    text-decoration: none;
+    color: #10151A; 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.referencias:hover {
+    color: #FCFCFC;
+    background-color: #10151A;
+    padding: 5px;
+    border-radius: 30px; 
+}
+
+.principaisSuplementos {
+    background-color: #10151A;
+    padding: 20px 100px 20px 100px;
+    color: #FCFCFC;
+    box-shadow: 0px 15px 20px #10151a9c;
+}
+
+.principaisSuplementos > h2 {
+    text-align: center;
+}
+
+.principaisSuplementos > div > img {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid #59E38C;
+}
+
+.grandesMarcas > div > a > img{
+    width: 300px;
+}
+
+.grandesMarcas > h3 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.grandesMarcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
