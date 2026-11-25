@@ -1,29 +1,54 @@
-body { /* PAGINA PRINCIPAL 01*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body,
+body.pagina01,
+body.pagina02,
+body.pagina03,
+body.pagina04 { /* PAGINA PRINCIPAL 01*/
     background-color: #FCFCFC;
     margin: 0;
-    text-align: justify;
+    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    line-height: 1.65;
 }
 
 header {
     background-color: #10151A;
-    padding-left: 100px;
-    padding-right: 100px;
+    color: #FCFCFC;
+    padding: 16px 6%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
     box-shadow: 0px 15px 20px #10151a9c;
 }
 
 header > h1 {
+    margin: 0;
     color: #59e38c;
+}
+
+header > nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
 }
 
 header > nav > a {
     text-decoration: none;
     color: #FCFCFC;
-    padding-left: 30px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 30px;
+    transition:background-color 0.2s ease, color 0.2s ease;
 }
 
 header > nav > a:hover {
@@ -34,14 +59,14 @@ header > nav > a:hover {
 }
 
 #textoimagem {
-    padding-top: 60px;
-    padding-left: 100px;
-    padding-right: 100px;
-    background-image: url(imagens/paginaPrincipal/fundo.jpg); 
-    background-size: 100%;
+    
+    background-image: linear-gradient(120deg, rgba(16, 21, 26, 0.88), rgba(16, 21, 26, 0.72)),
+        url(imagens/paginaPrincipal/fundo.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
     box-shadow: 0px 15px 20px #10151a9c;
+    padding: 64px 6%;
 }
 
 .verde {
@@ -50,8 +75,15 @@ header > nav > a:hover {
 }
 
 #textoimagem > h2 {
-    font-size: 60px;
-    margin: 20px 0 20px 0;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin: 12px 0 18px 0;
+    max-width: 720px;
+}
+
+#textoimagem > p {
+    margin: 0 0 22px 0;
+    max-width: 640px;
 }
 
 .branco {
@@ -68,43 +100,90 @@ header > nav > a:hover {
 .botao:hover {
     background-color: #FCFCFC;
     color: #10151A;
+    transform: translateY(-2px);
     font-weight: bolder;
 }
 
 #icones {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 60px;
+    padding: 48px 6% 24px 6%;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     text-align: center;
 }
 
 .imagens {
-    background-color: #59E38C;
+    background-color: hsl(142, 84%, 60%);
     border-radius: 20px;
+    padding: 10px;
     box-shadow: 5px 5px 15px #10151a6b;
+}
+
+#icones .imagens {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 12px auto;
+}
+
+#icones > div > p {
+    margin: 0 0 8px 0;
+    color: #1E293B;
 }
 
 #icones > div{
     margin: auto;
+    background-color: #f0ecec;
+    border: 1px solid #80a8dd;
+    border-radius: 14px;
+    padding: 20px 16px;
+    box-shadow: 0 4px 12px rgba(16, 21, 26, 0.06);
 }
 
 #navegacao {
-    padding: 60px 100px 0px 100px;
+    padding: 24px 6% 56px 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
     text-align: center;
 }
 
 #navegacao > div {
-    margin: auto;
-    display: inline-block;
-    padding-left: 70px;
+    background-color: #FFFFFF;
+    border: 1px solid #134281;
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 6px 16px rgba(16, 21, 26, 0.08);
+    
+}
+
+
+#navegacao .imagens {
+    width: 100%;
+    align-content: center;
+    height: 180px;
+    object-fit: cover;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
 #navegacao > div > p > a {
+    display: block;
     text-decoration: none;
-    color: #10151A; 
+    color: #065F46;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.05rem;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background-color: #ECFDF5;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 #navegacao > div > p > a:hover {
@@ -115,21 +194,23 @@ header > nav > a:hover {
 }
 
 #forms {
-    background-image: url(imagens/paginaPrincipal/fundo.jpg);
+    background-image:
+    linear-gradient(120deg, rgba(16, 21, 26, 0.9), rgba(16, 21, 26, 0.78)),
+     url(imagens/paginaPrincipal/fundo.jpg);    
     color: #FCFCFC;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 15px;
-    background-size: 100%;
+    padding: 48px 6%;
+    background-size: cover;
     background-position: center;
-    padding-top: 15px;
     box-shadow: 0px -15px 20px #10151a9c;
 }
 
 #forms > h3 {
-    padding-top: 15px;
-    font-size: 30px;
-    margin-top: 0px;
+    padding-top: 0;
+    font-size: 1.85rem;
+    margin-top: 90px;
+    color: #2fd992;
 }
 
 .forms {
@@ -140,6 +221,19 @@ header > nav > a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 30px;
+    border: 1px solid rgba(66, 236, 128, 0.3);
+    box-shadow: 0 12px 24px rgba(86, 132, 179, 0.2);
+}
+
+.forms > h3 {
+    margin: 0 0 16px 0;
+    color: #59E38C;
+}
+
+.label {
+    display: block;
+    margin-bottom: 2px;
+    color: #dff3e3;
 }
 
 .input {
@@ -150,17 +244,25 @@ header > nav > a:hover {
     display: block;
     margin: auto;
     margin-bottom: 15px;
-    border-radius: 10px;
+    border-radius: 12px;
+}
+
+
+
+#formulario > .botao {
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
 }
 
 .creditos {
     text-align: center;
     background-color: #10151A;
-    padding: 15px;
-    color: #FCFCFC;
-    font-weight: bolder;
-    font-size: 20px;
-    box-shadow: 0px -15px 20px #10151a9c;
+    padding: 20px 6%;
+    color: #f9e1e1;
+    font-weight: bold;
+    font-size: 1.05rem;
+    border-top: 1px solid rgba(242, 65, 15, 0.2);
 }
 
 .creditos > p {
@@ -176,17 +278,9 @@ header > nav > a:hover {
 
 .creditos > p > a:hover {
     color: #10151A;
-    background-color: #ffffff;
+    background-color: #eedada;
     padding: 10px;
     border-radius: 30px;
-}
-
-body.pagina01 { /*PAGINA 01 - TREINOS*/
-    background-color: #FCFCFC;
-    margin: 0;
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em; 
 }
 
 .tabelas {
@@ -194,6 +288,7 @@ body.pagina01 { /*PAGINA 01 - TREINOS*/
     border-radius: 8px;
     text-align: center;
     width: 100%;
+    background-color: #f0f5f3;
     overflow-x: hidden;
     box-shadow: 5px 5px 15px #10151a6b;
     border-collapse: collapse;
@@ -207,38 +302,48 @@ body.pagina01 { /*PAGINA 01 - TREINOS*/
     font-weight: bold;
     text-transform: uppercase;
     font-weight: 700;
+    border-bottom: 1px solid #E2E8F0;
 }
 
 .tabelas td {
     padding: 12px 14px;
     text-align: left;
+    border-bottom: 1px solid #2668bf;
 }
 
 .tabelas tr:nth-child(even) td {
-    background-color: #59e39c4f;
+    background-color: #58eda04f;
 }
 
-.iniciante > div {
-    padding-bottom: 15px;
+.tabelas tbody tr:hover td {
+    background-color: rgba(89, 237, 30, 0.393);
 }
 
-.iniciante > div > h1 {
-    margin-top: 0px;
-    padding-top: 15px;
-}
-
-.intermediario > div {
-    padding-bottom: 15px;
-}
-
-.intermediario > div > h1 {
-    margin-top: 0px; 
-    padding-top: 15px;   
-}
-
+.iniciante > div,
+.intermediario > div,
 .avancado > div {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
+
+.iniciante > div > P,
+.intermediario > div > P,
+.avancado > div > div > P {
+    text-align: justify;
+    padding-left: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+
+}
+.iniciante > div > h1,
+.intermediario > div > h1,
+.avancado > div > div > h1 {
+    margin-top: 0;
+    padding-top: 15px;
+    border-left: 10px solid #59E38C;
+    padding-left: 12px;
+}
+
 
 .avancado > div > div > h1 {
     margin-top: 0px; 
@@ -250,6 +355,7 @@ body.pagina01 { /*PAGINA 01 - TREINOS*/
     border: none;
     background-color: #10151A;
     box-shadow: 5px 5px 15px #10151a6b;
+    margin: 23px 0;
 }
 
 .aprenda > div {
@@ -259,19 +365,48 @@ body.pagina01 { /*PAGINA 01 - TREINOS*/
 .aprenda > div > h2 {
     margin-top: 0px;
     padding-top: 15px;
+    background-color: #10151A;
+    color: #FCFCFC;
+    border-radius: 20px;
 }
 
 .aprenda > div > a > img {
     margin: auto;
-    display: flex;
+    display: block;
+    width: 200px;
+    height: 110px;
+    object-fit: cover;
+    background-color: #d9e2eb;
+    border-radius: 20px;
 }
 
-body.pagina02 { /*PAGINA 02 - PORQUE TREINAR?*/
+.aprenda > div > p {
+    text-align: center;
+    padding-left: 10px;
+    font-size: 1.15rem;
+    font-weight: 450;
+    
+}
+
+
+.aprenda > div > a > img:hover {
+    box-shadow: 10px 2px 15px #95abc1;
+}
+
+body.pagina04 { /*PAGINA 01 - PRINCIPAL*/
     background-color: #FCFCFC;
     margin: 0;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 150%;
+}
+
+body.pagina02 { 
+    background-color: #FCFCFC;
+    margin: 0;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
 }
 
 
@@ -280,16 +415,28 @@ body.pagina03 { /*PAGINA 03 - DÉFICIT CALÓRICO*/
     margin: 0;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em; 
+    font-size: 100%; 
+}
+
+.listas {
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+.listas > p {
+    margin: 0 0 8px 0;
+    font-weight: bold;
 }
 
 .listas > li {
-    padding: 5px;
+    padding: 6px 12px 6px 8px;
     padding-left: 20px;
     list-style-type: disc;
-    text-align: justify;
     font-weight: bold;
     width: 100%;
+    text-align: left;
+    font-weight: bold;
+    transition: color 0.2s ease;
 }
 
 li:hover {
@@ -299,12 +446,23 @@ li:hover {
 
 .imagensPag03 {
     width: 100%;
-    display: block;
+    max-width: 800px;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
     box-shadow: 0px -15px 20px #10151a9c;
 }
 
 .sessaoEscura {
     background-color: #10151A;
+    color: #FCFCFC;
+    padding: 20px 6%;
+}
+
+.sessaoEscura .divMain {
+    background-color: #172028;
+    border-color: rgba(89, 227, 140, 0.25);
     color: #FCFCFC;
 }
 
@@ -314,10 +472,15 @@ li:hover {
 }
 
 .referencias02 {
+    display: inline-block;
     text-decoration: none;
-    color: #59E38C; 
+    color: #59E38C;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.05rem;
+    padding: 4px 10px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    
 }
 
 .referencias02:hover {
@@ -344,12 +507,13 @@ body.pagina04 { /*PAGINA 04 - MUSCULAÇÃO*/
 }
 
 .divMain {
-    padding-left: 100px;
-    padding-right: 100px;
-    max-width: 900px;
-    margin: 0 auto;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    padding: 28px 36px;
+    max-width: 920px;
+    margin: 28px auto;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(16, 21, 26, 0.06);
     line-height: 1.65;
 
 }
@@ -363,10 +527,17 @@ body.pagina04 { /*PAGINA 04 - MUSCULAÇÃO*/
 }
 
 .referencias{
+
+    display: inline-block;
     text-decoration: none;
-    color: #10151A; 
+    color: #065F46;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.05rem;
+    padding: 4px 10px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    
+    
 }
 
 .referencias:hover {
@@ -385,6 +556,8 @@ body.pagina04 { /*PAGINA 04 - MUSCULAÇÃO*/
 
 .principaisSuplementos > h2 {
     text-align: center;
+    color: #59E38C;
+    margin: 0 0 24px 0;
 }
 
 .principaisSuplementos > div > img {
@@ -392,6 +565,10 @@ body.pagina04 { /*PAGINA 04 - MUSCULAÇÃO*/
     width: 300px;
     border-radius: 20px;
     border: 2px solid #59E38C;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+    margin-bottom: 12px;
 }
 
 .grandesMarcas > div > a > img{
@@ -408,5 +585,31 @@ body.pagina04 { /*PAGINA 04 - MUSCULAÇÃO*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 6%;
 }
 
+@media (max-width: 600px) {
+    header {
+        padding: 14px 20px;
+    }
+
+    #textoimagem,
+    #icones,
+    #navegacao,
+    #forms,
+    .principaisSuplementos {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #icones {
+        grid-template-columns: 1fr;
+    }
+
+    .divMain {
+        padding: 20px;
+        margin: 20px 16px;
+    }
+}
